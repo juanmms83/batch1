@@ -21,6 +21,9 @@ public class JobListener extends JobExecutionListenerParser{
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 	
+	/*
+	 * Metodo que se ejecutara cuaando termine el proceso
+	 */
 	@AfterJob
 	public void afterJob(JobExecution execution) {
 	
